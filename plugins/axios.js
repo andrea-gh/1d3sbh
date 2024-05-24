@@ -5,9 +5,15 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   const directus = axios.create({
     baseURL: config.public.directusUrl,
-    headers: {
-      Authorization: `Bearer ${config.public.directusToken}`,
-    },
+  });
+
+  // Add a request interceptor
+  directus.interceptors.request.use((request) => {
+    if (process.server) {
+      // Only include the token server-side
+      request.headers.Authorization = `Bearer ${config.directusToken}`;
+    }
+    return request;
   });
 
   nuxtApp.provide('directus', directus);
