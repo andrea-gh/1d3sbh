@@ -13,8 +13,6 @@
     "@nuxtjs/proxy": "^2.1.0",
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
-    "http-proxy-middleware": "^3.0.0",
-    "nuxt": "^3.11.2",
-    "socket.io-client": "^4.7.5"
+    "nuxt": "^3.11.2"
   }
 }
