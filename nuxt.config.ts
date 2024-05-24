@@ -5,10 +5,11 @@ dotenv.config();
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
-      directusUrl: process.env.DIRECTUS_URL,
-      directusToken: process.env.DIRECTUS_TOKEN,
+      directusUrl: 'https://datastudio.ahania.com',
+      directusToken: '7o5L0LDF4cakIUhpmEMoCzz5N0ee1u66',
     },
   },
   plugins: ['~/plugins/axios.js'],
