@@ -7,7 +7,7 @@
   --text-color: #1e272e; /* Dark Grey */
   --card-background: #d2dae2;
   --card-shadow: rgba(0, 0, 0, 0.1);
-  --hover-transform: translateY(-10px); /* Adjusted for subtle effect */
+  --hover-transform: translateY(-20px); /* Adjusted for subtle effect */
 }
 
 body {

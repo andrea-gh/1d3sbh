@@ -1,3 +1,4 @@
+// nuxt.config.js
 import { defineNuxtConfig } from 'nuxt/config';
 import dotenv from 'dotenv';
 
@@ -8,8 +9,8 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
-      directusUrl: 'https://datastudio.ahania.com',
-      directusToken: '7o5L0LDF4cakIUhpmEMoCzz5N0ee1u66',
+      directusUrl: process.env.DIRECTUS_URL,
+      directusToken: process.env.DIRECTUS_TOKEN,
     },
   },
   plugins: ['~/plugins/axios.js'],
