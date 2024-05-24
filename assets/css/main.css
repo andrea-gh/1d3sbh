@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-  --primary-color: #f53b57;
+  --primary-color: ;
+  --background-color: ;
   --secondary-color: #f06292; /* Pink */
-  --background-color: #1e272e; /* Light Grey */
   --text-color: #1e272e; /* Dark Grey */
   --card-background: #d2dae2;
   --card-shadow: rgba(0, 0, 0, 0.1);
-  --hover-transform: translateY(-20px);
+  --hover-transform: translateY(-10px); /* Adjusted for subtle effect */
 }
 
 body {
@@ -50,7 +50,7 @@ body {
 .post-card {
   background: var(--card-background);
   border: 1px solid #ddd;
-  border-radius: 18px;
+  border-radius: var(--border-radius);
   box-shadow: 0 2px 4px var(--card-shadow);
   padding: 20px;
   transition: transform 0.2s;
@@ -70,6 +70,13 @@ body {
   color: var(--text-color);
   font-size: 1em;
   line-height: 1.6;
+}
+
+.post-cover {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: calc(var(--border-radius) / 2);
 }
 
 .footer {
